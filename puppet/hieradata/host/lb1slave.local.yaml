@@ -1,0 +1,10 @@
+---
+classes:
+    - 'glusterfs::client'
+    - 'glusterfs::server'
+    - 'user::setup'
+    #- 'customer::packages'
+
+ssh:
+  root_login: without-password
+

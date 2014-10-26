@@ -1,0 +1,18 @@
+---
+:hierarchy:
+    - "host/%{fqdn}"
+    - "domain/%{domain}"
+    - "env/%{::environment}"
+    - "ops/%{operatingsystem}"
+    - "os/%{osfamily}"
+    - "arch/%{::architecture}"
+    - common
+    #- %{::vm_type}
+    #- %{::vm_env}
+:backends:
+    - yaml
+    #- puppet
+:yaml:
+    :datadir: 'puppet/hieradata'
+#:puppet:
+#    :datasource: data
