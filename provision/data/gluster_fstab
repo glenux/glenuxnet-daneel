@@ -1,0 +1,1 @@
+localhost:www-volume    /var/www        glusterfs       netdev,rw,allow_other,default_permissions,max_read=131072 0 0
